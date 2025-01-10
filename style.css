@@ -1,0 +1,150 @@
+/* ---------- preps ---------- */
+
+/* @font-face {
+    font-family: OpenSans;
+    src: url("https://netology-code.github.io/html-2-diploma/sources/fonts/OpenSans-Bold.woff") format("woff");
+    font-weight: 800;
+
+    font-display: swap;
+}
+
+@font-face {
+    font-family: OpenSans;
+    src: url("https://netology-code.github.io/html-2-diploma/sources/fonts/OpenSans-Regular.woff") format("woff");
+
+    font-display: swap;
+} */
+
+/* @import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Oswald:wght@200..700&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Nunito:ital,wght@0,200..1000;1,200..1000&family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Oswald:wght@200..700&display=swap'); */
+
+@import url('./sources/fonts/stylesheet.css');
+
+:root {
+    --source-sans-pro: 'Source Sans Pro', Sans, serif;
+}
+
+body,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+ul,
+ol,
+p {
+    margin: 0;
+}
+
+body {
+    font-family: "Nunito", serif;
+}
+
+ul,
+ol {
+    padding-inline-start: 0px;
+}
+
+li {
+    list-style-type: none;
+}
+
+a {
+    color: inherit;
+    text-decoration: none;
+
+    font-style: normal;
+}
+
+a:visited {
+    color: inherit;
+}
+
+a:hover {
+    color: inherit;
+}
+
+time {
+    font-style: normal;
+}
+
+input[type=radio] + label{
+    cursor: pointer;
+}
+
+input[type=text],
+input[type=search],
+input[type=email],
+textarea {
+    background-color: #f4f7f6;
+    font-family: inherit;
+}
+
+input[type=radio] {
+    cursor: pointer;
+    --radio-bg: url("./sources/svg/form-empty-circle.svg");
+    --radio-size: 19px;
+    appearance: none;
+    margin: 0;
+}
+
+input[type=radio]:checked {
+    --radio-bg: url("./sources/svg/form-circle.svg");
+}
+
+input[type=radio]:before {
+    content: "";
+    display: block;
+    width: var(--radio-size);
+    height: var(--radio-size);
+    background-image: var(--radio-bg);
+    background-size: contain;
+}
+
+input,
+button {
+    vertical-align: top;
+}
+
+button {
+    font-family: inherit;
+}
+
+input,
+input:focus-visible,
+input:focus,
+fieldset,
+textarea {
+    border: none;
+    outline: none;
+}
+
+fieldset {
+    margin: 0;
+    padding: 0;
+}
+
+button {
+    border: none;
+    outline: none;
+    padding: 0;
+
+    cursor: pointer;
+}
+
+*,
+*:before,
+*:after {
+    box-sizing: border-box;
+}
+
+.unloaded-pic {
+    box-sizing: border-box;
+    border: 2px solid black;
+}
+
+.display-none {
+    display: none;
+}
